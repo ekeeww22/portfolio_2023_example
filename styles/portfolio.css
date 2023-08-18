@@ -1,0 +1,92 @@
+/* 반응형 대비 최소제한 너비 설정 */
+header, main {min-width:900px;}
+/* header */
+header {
+    background:#fff;
+    position:fixed; left:0; top:0; width:100%; z-index:999; padding:40px 30px 0 30px;
+}
+header nav {
+    border-top:1.5px solid #333;
+    border-bottom:4px solid #333; padding:20px 0; 
+    display:flex; justify-content:space-between;
+}
+header nav .gnb {}
+header nav .gnb a {
+    font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; margin-right:30px; transition:all 0.3s; }
+header nav .gnb a:hover {color:#FF9900;}
+header nav .sns {}
+header nav .sns span {font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; margin-right:5px;}
+header nav .sns span:last-child {margin-right:0;}
+/* #home */
+main {/* background:lightgreen; */}
+main > * {padding:0 30px}
+main #home {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 237, 170, 0.712) 100%);
+    height:100vh; text-align:center;}
+main #home h1 {padding-top:250px;}
+main #home h1 img {}
+main #home .mouse {
+    position:absolute; left:50%; bottom:50px; transform:translateX(-50%);
+}
+main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
+@keyframes mouse_move {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(-30px);}
+}
+/* #skill */
+main #skill {background:#fff; padding-top:100px; padding-bottom:70px;}
+main #skill h1 {
+    font-size: 3.125rem; font-weight:900; padding-bottom:30px; letter-spacing:-0.02em; border-bottom:3px solid #333;}
+main #skill .container {
+    /* background:lightpink; */
+    padding:80px; height:830px;
+    display:flex; flex-flow:column wrap; align-content:space-between; /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
+}
+main #skill .container li {
+    /* background: lightblue; */
+    width:45%; padding-bottom:35px; margin-bottom:35px; border-bottom:1px dotted #333;
+    display:flex; flex-flow:row nowrap;/* 아이콘, 글자 옆으로 배치하는 flex */
+}
+main #skill .container li:last-child {margin-bottom:0;}
+main #skill .container li .icon {width:80px; animation:icon_move 1s linear infinite alternate;}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width:calc(100% - 80px); font-size:1.25rem ; font-weight:600; line-height:40px; letter-spacing:-0.02em;}
+@keyframes icon_move {
+    0% {transform:translateY(0) rotate(0);}
+    100% {transform:translateY(-5px) rotate(-10deg);}
+}
+/* profile */
+main #profile {}
+main #profile h1 {text-align:center; padding:100px 0;}
+main #profile h1 img {}
+main #profile .container {display:flex; justify-content:center; padding-bottom:100px;}
+main #profile .container .photo {width:350px;}
+main #profile .container .photo img {
+    width:250px; animation:photo_rotate 1s linear infinite alternate;}
+main #profile .container .info {width:40%;}
+main #profile .container .info * {font-size:1.25rem; margin-bottom:10px;}
+main #profile .container .info h2 {font-weight:700; font-size:1.5rem; margin-bottom:30px;}
+main #profile .container .info dl {display:flex; flex-flow:row wrap;}
+main #profile .container .info dl > * {line-height:40px; font-weight:500; border-bottom:1px dashed #ccc; padding-bottom:10px;}
+main #profile .container .info dl dt {width:105px;}
+main #profile .container .info dl dd {width:calc(100% - 105px);}
+@keyframes photo_rotate {
+    0% {transform:rotate(-5deg);}
+    100% {transform:rotate(5deg);}
+}
+/* project_web1 */
+main #project_web1 {display:flex; flex-flow:column nowrap; align-items:center; }
+main #project_web1 h1 {
+    padding:100px 0; font-size: 3.125rem; font-weight:700; letter-spacing:-0.02em;}
+main #project_web1 .preview {}
+main #project_web1 .preview img {}
+main #project_web1 .project_info {margin:50px 0; position: relative; left:10%;}
+main #project_web1 .project_info p {font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; line-height:35px;}
+main #project_web1 .link {padding-bottom:100px; position: relative; left:10%;}
+main #project_web1 .link a {
+    display:inline-block; padding:20px; border-radius:5px; background:#333; font-size: 1.25rem; letter-spacing:-0.02em; color:#FFF; margin-right:10px; transition:all 0.3s;
+}
+main #project_web1 .link a:hover {background:#ccc; color:#222; font-weight:600;}
+main #project_web1 .link a:last-child {background:#D93535; margin-right:0;}
+main #project_web1 .link a:last-child:hover {background: #FF9900;}
