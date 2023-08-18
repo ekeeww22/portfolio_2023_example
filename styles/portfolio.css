@@ -84,6 +84,7 @@ main #project_web1 h1 {
 main #project_web1 .preview {}
 main #project_web1 .preview img {}
 main #project_web1 .project_info {margin:40px 0; position: relative; left:10%;}
+main #project_web1:last-child .project_info {margin:40px 0; position: relative; left:7%;}
 main #project_web1 .project_info p {font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; line-height:35px;}
 main #project_web1 .link {padding-bottom:100px; position: relative; left:10%;}
 main #project_web1 .link a {
