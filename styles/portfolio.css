@@ -1,8 +1,10 @@
+/* nav 동작 */
+body, html {scroll-behavior:smooth;}
 /* 반응형 대비 최소제한 너비 설정 */
-header, main {min-width:900px;}
+header, main {min-width:900px; background:rgba(255, 247, 219, 0.459);}
 /* header */
 header {
-    background:#fff;
+    background:#fdffee;
     position:fixed; left:0; top:0; width:100%; z-index:999; padding:40px 30px 0 30px;
 }
 header nav {
@@ -13,7 +15,7 @@ header nav {
 header nav .gnb {}
 header nav .gnb a {
     font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; margin-right:30px; transition:all 0.3s; }
-header nav .gnb a:hover {color:#FF9900;}
+header nav .gnb a:hover {color:#FF9900; font-weight:500;}
 header nav .sns {}
 header nav .sns span {font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; margin-right:5px;}
 header nav .sns span:last-child {margin-right:0;}
@@ -21,7 +23,7 @@ header nav .sns span:last-child {margin-right:0;}
 main {/* background:lightgreen; */}
 main > * {padding:0 30px}
 main #home {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 237, 170, 0.712) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 244, 205, 0.384) 100%);
     height:100vh; text-align:center;}
 main #home h1 {padding-top:250px;}
 main #home h1 img {}
@@ -34,7 +36,7 @@ main #home .mouse img {animation:mouse_move 1s linear alternate infinite;}
     100% {transform:translateY(-30px);}
 }
 /* #skill */
-main #skill {background:#fff; padding-top:100px; padding-bottom:70px;}
+main #skill {padding-top:100px; padding-bottom:70px;}
 main #skill h1 {
     font-size: 3.125rem; font-weight:900; padding-bottom:30px; letter-spacing:-0.02em; border-bottom:3px solid #333;}
 main #skill .container {
@@ -76,12 +78,12 @@ main #profile .container .info dl dd {width:calc(100% - 105px);}
     100% {transform:rotate(5deg);}
 }
 /* project_web1 */
-main #project_web1 {display:flex; flex-flow:column nowrap; align-items:center; }
+main #project_web1 {display:flex; flex-flow:column nowrap; align-items:center;}
 main #project_web1 h1 {
     padding:100px 0; font-size: 3.125rem; font-weight:700; letter-spacing:-0.02em;}
 main #project_web1 .preview {}
 main #project_web1 .preview img {}
-main #project_web1 .project_info {margin:50px 0; position: relative; left:10%;}
+main #project_web1 .project_info {margin:40px 0; position: relative; left:10%;}
 main #project_web1 .project_info p {font-size: 1.25rem; font-weight:500; letter-spacing:-0.02em; line-height:35px;}
 main #project_web1 .link {padding-bottom:100px; position: relative; left:10%;}
 main #project_web1 .link a {
@@ -89,4 +91,6 @@ main #project_web1 .link a {
 }
 main #project_web1 .link a:hover {background:#ccc; color:#222; font-weight:600;}
 main #project_web1 .link a:last-child {background:#D93535; margin-right:0;}
-main #project_web1 .link a:last-child:hover {background: #FF9900;}
+main #project_web1:last-child .link a:last-child {background:#9cc255; margin-right:0;}
+main #project_web1 .link a:last-child:hover {background:#FF9900;}
+main #project_web1:last-child .link a:last-child:hover {background:#4ec935; color:#333;}
